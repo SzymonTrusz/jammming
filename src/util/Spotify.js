@@ -1,5 +1,5 @@
 const clientId = '478be30c1f9a48868dcc0c943137aabf';
-const redirectUri = 'https://vcjmp3f.netlify.app';
+const redirectUri = 'http://localhost:3000/callbac';
 let accessToken;
 
 const Spotify = {
