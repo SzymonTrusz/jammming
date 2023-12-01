@@ -15,6 +15,9 @@
     border: none;
 }
 
+#lightmode:hover {
+    background-color: #1db954;
+}
 
 #lightMode.clicked {
     filter: none !important;
