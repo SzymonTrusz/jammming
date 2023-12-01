@@ -1,0 +1,93 @@
+body,
+html, 
+#root {
+  height: 100%; 
+  /* background-color: #181818; */
+  background-color: var(--background-color);
+}
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  width: 100%;
+  margin-top: 0;
+  padding: .77rem 0;
+  background-color: var(--heading-color);
+  /* background-color: #121212; */
+  text-align: center;
+  font-size: 1.88rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--text-color)
+  /* color: white; */
+}
+
+h1 .highlight {
+  color: #1db954;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.55rem;
+  color: var(--text-color)
+}
+
+.App {
+  height: 100%;
+  padding: 0 17% 10% 17%;
+  font-weight: 500;
+  color: var(--text-color)
+}
+
+.Mode {
+  margin-left: 46.5%;
+  margin-top: 80px;
+  z-index: 1;
+}
+
+.App-playlist {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+/* DarkLight Mode */
+:root {
+  --white: #fbf7f5;
+  --black: #181818;
+  --grey: rgb(238, 230, 230);
+  --deepBlack: #121212;
+  --deepWhite: #f7f2f0;
+}
+
+body {
+  font-family: Helvetica;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+body.light {
+  --background-color: var(--white);
+  --text-color: var(--black);
+  --button-color: var(--black);
+  --heading-color: var(--deepWhite);
+  --button-color: var(--grey);
+}
+
+body.dark {
+  --background-color: var(--black);
+  --text-color: var(--white);
+  --button-color: var(--black);
+  --heading-color: var(--deepBlack);
+  --button-color: var(--deepWhite);
+}
+
+@media only screen and (max-width: 1020px) {
+  .App-playlist {
+    align-items: center;
+    flex-direction: column;
+  }
+}

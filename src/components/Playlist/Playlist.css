@@ -1,0 +1,53 @@
+.Playlist { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+
+    width: 37%;
+    max-height: 900px;
+    padding: 2.27rem 1.16rem;
+    background-color: rgba(30, 202, 90, 0.8);
+    box-shadow: 0 4px 2px 2px gray;
+}
+
+.Playlist input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 1px solid var(--text-color);;
+}
+
+.Playlist-save {
+    cursor: pointer;
+    width: 10rem;
+    padding: .77rem 0;
+    border-radius: 54px;
+    border-width: 0px;
+    margin-top: 1.27rem;
+    background-color: var(--button-color);
+    text-align: center;
+    font-size: .75rem;
+    transition: background-color .25s;
+    color: black;
+    font-weight: 500;
+}
+
+.Playlist-save:hover {
+    background-color: #1db954;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+@media only screen and (max-width: 1020px) {
+    .Playlist {
+        width: 90%;
+    }
+}

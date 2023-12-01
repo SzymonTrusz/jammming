@@ -1,0 +1,21 @@
+#lightmode {
+    transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+
+.Mode button {
+    border: solid black 2px;
+    cursor: pointer;
+    width: 5.20rem;
+    padding: .60rem;
+    border-radius: 54px;
+    font-size: .75rem;
+    background-color: var(--button-color);
+    font-weight: 500px;
+    border: none;
+} */
+
+
+#lightMode.clicked {
+    filter: none !important;
+}
