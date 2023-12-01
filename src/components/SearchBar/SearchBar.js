@@ -1,6 +1,5 @@
 import React from 'react';
 import './SearchBar.css'
-import Mode from '../Mode/Mode';
 
 class SearchBar extends React.Component {
     constructor(props) {
@@ -25,7 +24,6 @@ class SearchBar extends React.Component {
     render () {
         return (
             <div className='Searchbar'>
-                <Mode />
                 <input onChange={this.handleTermChange} placeholder='Enter a song title' />
                 <button className='SearchButton' onClick={this.search}>SEARCH</button>
             </div>

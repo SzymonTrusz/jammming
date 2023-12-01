@@ -4,6 +4,7 @@ import './App.css';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
 import Playlist from '../Playlist/Playlist';
+import Mode from '../Mode/Mode';
 
 import Spotify from '../../util/Spotify';
 
@@ -66,8 +67,7 @@ class App extends React.Component {
       <div>
         <h1>Ja<span className='highlight'>mmm</span>ing.</h1>
         <div className="App">
-          <div id='mode'>
-        </div>
+        <Mode /> 
         <SearchBar onSearch={this.search}/>
           <div className="App-playlist">
           <SearchResults searchResults={this.state.searchResults}
