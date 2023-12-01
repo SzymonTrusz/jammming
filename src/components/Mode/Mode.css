@@ -15,7 +15,7 @@
     border: none;
 }
 
-#lightmode:hover {
+.Mode button:hover {
     background-color: #1db954;
 }
 
